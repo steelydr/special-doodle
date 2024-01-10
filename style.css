@@ -1,0 +1,211 @@
+body{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    background: linear-gradient(rgb(244, 204, 204), rgb(193, 193, 243));
+    margin: 0;
+    padding: 0;
+    flex:1 0 5px;
+}
+section{
+    width: 88%;
+    border-radius: 15px;
+    height: 800px;
+    padding: 10px 10px 10px 10px;
+    margin: 0rem 3rem 2rem 5rem;
+    background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 71.88%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    display: grid;
+    flex:1 0 5px;
+}
+header {
+    height: 50px;
+    width: 100%;
+    background-color:none; 
+    margin:3px 0px 3px 0px;
+    padding:0;
+}
+.icons{
+    height:75%;
+    width: 200px;
+    background-color: none;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:10px 0px 5px 10px;
+    margin: 0px 0px 0px 1050px;
+}
+.icons:hover > :not(:hover) 
+{
+    opacity: 0.7;
+}
+.fa-linkedin-in:hover {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to left, #00a6ff, rgb(72, 169, 243));
+    background-size: 200% 100%; /* Adjust the size as needed */
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.fa-envelope:hover {
+    background: linear-gradient(to bottom, #ea4335 0%, #4285f4 25%, #34a853 50%, #fbbc05 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 400%; 
+    animation: gradientAnimation 2s infinite;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+.fa-github:hover{
+    opacity:1;
+    cursor:pointer;
+    color: rgb(186, 96, 60);
+    transform: scale(1.05);
+}
+i {
+    color: black;
+    justify-content: center;
+    font-size: 34px;
+}
+.content{
+    display:flex;
+    height: 450px;
+    margin:0;
+    padding:0;
+}
+.content-a{
+    width:100%;
+    padding: 30px 0px 0px 50px;
+    margin:0;
+}
+h1{
+    font-size: 4rem;
+    margin:0;
+    padding:20px 0px 0px 40px;
+    width:80%;
+    cursor: default;
+
+}
+h2{
+    font-size: 2rem;
+    margin:0;
+    padding:15px 0px 15px 43px;
+    width:70%;
+    cursor: default;
+
+}
+h3{
+    font-size: 1.5rem;
+    margin:0;
+    padding:15px 0px 0px 55px;
+    width:70%;
+    cursor:default;
+
+}
+span{
+    color: rgb(177, 152, 230);
+    opacity: 1;
+    cursor:default;
+
+}
+.frontend {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px 0px 5px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    cursor: default;
+}
+.content-b{
+    width:100%;
+    height: 50%;
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    margin:0px 20px 0px 20px;
+    opacity:1 ;
+    border-radius: 15px;
+}
+p{
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(166, 166, 166);
+    padding : 0px 5px 2px 8px;
+    opacity:1;
+    cursor: pointer;
+}
+p:hover{
+    background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, rgba(244, 219, 237, 0.5) 0%, rgba(255, 255, 255, 0) 71.88%, rgba(255, 255, 255, 0) 0%), 
+                radial-gradient(178.94% 106.41% at 26.42% 0%, rgba(244, 219, 237, 0.5) 0%, rgba(255, 255, 255, 0) 71.88%, rgba(255, 255, 255, 0) 0%), 
+                #FFFFFF;
+    cursor: default;
+}
+h4{
+    font-size: 1.4rem;
+    opacity:1 ;
+    cursor: default;
+
+}
+.content-c {
+    background-color: transparent;
+    height: 350px;
+    margin: 0px 20px 5px 20px;
+    /*border: 1px solid black;*/
+    border-radius: 26px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.project{
+    height: 330px;
+    width: 360px;/*For 5 put 245px*/
+    margin:10px 0px 8px 0px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(255, 200, 200, 0.2), rgba(165, 165, 229, 0.2));
+    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.015), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.09);
+}
+h3.title{
+    height: 65px;;
+    width: 360px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    border-width: 0px 0px 0px 0px ;
+    padding:20px 0px 5px 0px;
+    font-size: 27px;
+    color: rgb(0, 0, 0,1);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #777;
+}
